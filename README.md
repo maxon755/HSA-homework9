@@ -1,6 +1,6 @@
 ## HSA. Homework9. SQL Databases
 
-Benchmarking of default `Mysql` server.
+Benchmarking of `Mysql` database.
 
 ### The machine:
 
@@ -97,7 +97,7 @@ where birth_date = "2000-01-01";
 
 > HASH index is not supported by Innodb storage engine
 
-Index selectivity calculated by:
+Index selectivity is calculated by:
 ```sql
 SELECT (COUNT(DISTINCT birth_date) / COUNT(*)) AS index_selectivity FROM users;
 ```
